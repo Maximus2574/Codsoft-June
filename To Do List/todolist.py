@@ -47,16 +47,16 @@ def openTaskfile():
         file.close()
 
 #icon
-Image_icon=PhotoImage(file="task.png")
+Image_icon=PhotoImage(file="Image/task.png")
 root.iconphoto(False,Image_icon)
 #Top Bar 
-TopImage=PhotoImage(file="topbar.png")
+TopImage=PhotoImage(file="Image/topbar.png")
 Label(root,image=TopImage).pack( )
 
-dockImage=PhotoImage(file="dock.png")
+dockImage=PhotoImage(file="Image/dock.png")
 Label(root,image=dockImage,bg="#32405b").place(x=30,y=25)
 
-noteImage=PhotoImage(file="task.png")
+noteImage=PhotoImage(file="Image/task.png")
 Label(root,image=noteImage,bg="#32405b").place(x=340,y=25)
 
 heading= Label(root,text="All Tasks",font="roboto 20 bold",fg="White",bg="#32405b")
@@ -92,7 +92,7 @@ openTaskfile()
 
 
 #delete
-Delete_icon=PhotoImage(file="delete.png")
+Delete_icon=PhotoImage(file="Image/delete.png")
 Button(root,image=Delete_icon,bd=0,command=deleteTask).pack(side=BOTTOM,pady=13)
 
 
